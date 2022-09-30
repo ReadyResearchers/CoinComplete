@@ -11,7 +11,7 @@ coins = ['BTC','ETH']
 
 merge = False
 for coin in coins:
-    print(f'gathering {coin}...')
+    print(f'Getting {coin} this will take around 15 seconds')
     start_str = 'Sep 16, 2022'
     end_str = 'Sep 26, 2022'
 
@@ -54,13 +54,14 @@ fig = go.Figure(data=[go.Candlestick(x=all_coins_df['OpenTime'],
                 high=all_coins_df['BTC-USD_High'],
                 low=all_coins_df['BTC-USD_Low'],
                 close=all_coins_df['BTC-USD_Close'])])
+fig.update_layout(title_text='BTC')
 
 fig2 = go.Figure(data=[go.Candlestick(x=all_coins_df['OpenTime'],
                 open=all_coins_df['ETH-USD_Open'],
                 high=all_coins_df['ETH-USD_High'],
                 low=all_coins_df['ETH-USD_Low'],
                 close=all_coins_df['ETH-USD_Close'])])
-
+fig2.update_layout(title_text='ETH')
 
 fig.show()
 fig2.show()
