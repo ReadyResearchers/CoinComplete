@@ -15,3 +15,6 @@ Useful tool for market annalist.
 
 
 Data is presented in a format that allows users to easliy look at market activity.  These graphs are useful at telling if investments would make money.  This tool is intended to be used by anyone wishing to research crypto activity.  It is compatable with all coins that are regisered on the Binance API.  This allows for easy minipulation of the data to specific needs.
+
+Outline:
+https://docs.google.com/document/d/18BZ2qadveVLXeHLCQd9eKBzU4CjPa4pPmedMjZzkGkY/edit?usp=sharing
