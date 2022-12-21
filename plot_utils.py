@@ -3,7 +3,7 @@ import numpy as np
 import plotly.express as px
 import pandas as pd
 
-def shade_plot(data,x_col,y_col,avg_col,n_splits,range_color=[0.99,1.01],filter_out_count=50):
+def shade_plot(data,x_col,y_col,mean_col,n_splits,range_color=[0.99,1.01],filter_count=50):
     xs = np.linspace(data[x_col].min(),data[x_col].max(),n_splits)
     ys = np.linspace(data[y_col].min(),data[y_col].max(),n_splits)
     
@@ -20,17 +20,17 @@ def shade_plot(data,x_col,y_col,avg_col,n_splits,range_color=[0.99,1.01],filter_
             if data[(data[x_col] >= x) & \
                 (data[x_col] < x+x_dist) & \
                 (data[y_col] >= y) & \
-                (data[y_col] < y+y_dist)][avg_col].count() > filter_out_count:
+                (data[y_col] < y+y_dist)][mean_col].count() > filter_count:
                 
                 mean[y].append(data[(data[x_col] >= x) & \
                                         (data[x_col] < x+x_dist) & \
                                         (data[y_col] >= y) & \
-                                        (data[y_col] < y+y_dist)][avg_col].mean())
+                                        (data[y_col] < y+y_dist)][mean_col].mean())
                 
                 median[y].append(data[(data[x_col] >= x) & \
                                         (data[x_col] < x+x_dist) & \
                                         (data[y_col] >= y) & \
-                                        (data[y_col] < y+y_dist)][avg_col].mean())
+                                        (data[y_col] < y+y_dist)][mean_col].mean())
                 
             else:
                 mean[y].append(1)
@@ -39,7 +39,7 @@ def shade_plot(data,x_col,y_col,avg_col,n_splits,range_color=[0.99,1.01],filter_
             count[y].append(data[(data[x_col] >= x) & \
                                     (data[x_col] < x+x_dist) & \
                                     (data[y_col] >= y) & \
-                                    (data[y_col] < y+y_dist)][avg_col].count())
+                                    (data[y_col] < y+y_dist)][mean_col].count())
     
     
     fig = px.imshow(pd.DataFrame(mean,index=xs).swapaxes("index", "columns"),

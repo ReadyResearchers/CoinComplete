@@ -18,3 +18,12 @@ Data is presented in a format that allows users to easliy look at market activit
 
 Outline:
 https://docs.google.com/document/d/18BZ2qadveVLXeHLCQd9eKBzU4CjPa4pPmedMjZzkGkY/edit?usp=sharing
+
+
++ Run Instructions:
+
+```
+python cluster.py
+```
+
+**NOTE** this will NOT work unless you replace the key values in the keys.py with YOUR unique secret key and API key.
