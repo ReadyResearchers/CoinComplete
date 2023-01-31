@@ -1,5 +1,5 @@
 import pandas as pd
-from binance.client import Client
+from binance.spot import Spot as Client
 from keys import api_key, secret_key
 import time
 from datetime import datetime
@@ -11,7 +11,9 @@ from plot_utils import shade_plot
 import os
 from sklearn.decomposition import PCA
 
-client = Client(api_key, secret_key)
+api_secret = secret_key
+
+client = Client(api_key, api_secret, base_url=' https://data.binance.com')
 
 coins = ['BTC','ETH']
 
@@ -21,7 +23,7 @@ for coin in coins:
     start_str = 'Jan 1, 2020'
     end_str = 'Dec 31, 2021'
 
-    klines = client.get_historical_klines(symbol=f'{coin}USDT', interval=client.KLINE_INTERVAL_1HOUR, start_str=start_str, end_str=end_str)
+    klines = client.klines(symbol=f'{coin}USDT', interval= "1h")
     cols = ['OpenTime',
             f'{coin}-USD_Open',
             f'{coin}-USD_High',
