@@ -21,6 +21,7 @@ pip install keras
 pip install os
 ```
 **RUNS BEST IN VISUAL STUDIO WITH ms-toolsai.jupyter**
+
 Run this program to load the data **NOTE: Date Variables are able to be changed**:
 ```
 python data_processor.py
@@ -32,6 +33,7 @@ sentiment.ipynb
 ```
 
 To start trading with trained data run **NOTE: Target coin able to be changed**:
+**Example Input: BTC-60-SEQ-3-PRED-1679535879 (found in /models)**
 ```
 trading.ipynb
 ```
