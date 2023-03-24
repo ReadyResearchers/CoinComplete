@@ -1,5 +1,9 @@
 # CoinComplete: A Principle Component Analysis Machine Learning Tool Used for Cryptocurrency investing.
 
+# Abstract
+
+My research determines if using machine learning to predict buy and sell orders through the Binance market is profitable.  Using a Principle component analysis (PCA) model to infer predictions on future market activity.  These predictions will be used to trade multiple currencies profitably.  For the purpose of this research, I will just be looking at Bitcoin (BTC) and Ethereum (ETH) as they are the most frequently traded coins. Using the Binance API, data is able to gathered from the present and the past.  Using this data in a Python script allows for manipulation of the data by applying it to the hyperparameters of the model.  The information that I am gathering will be able to predict when a person should buy and when a person should sell.  The research done here is done with careful consideration of previous other research done.  Previous research has taken a look at various other methods that have proven not successful.  Most other research had also taken place during a bull market when this research differentiates itself by being done during a bear market. This is research is intended to be used by crypto currency market analysts of any capacity.  It is something that is intended to help market traders more accurately know when to buy and sell.  This research was conducted to further the understanding of cryptocurrency market activity.  It attempts to answer questions about how to create profitable trading strategies in the crypto market.
+
 # Run Instructions:
 
 1. Clone the repository locally
@@ -53,3 +57,7 @@ Used: Used to conduct live market orders on the Binance.US exchange(amount trade
 
 
 **NOTE** this will NOT work unless you replace the key values in the keys.py with YOUR unique secret key and API key generated here https://www.binance.us/settings/api-management?tab=exchange (mine loaded for educational use only).
+
+# Conclusions
+
+The results of this tool should not be taken as real financial recommendations. This is only meant to see if the previous market trends can indicate future market results. While the average result that we get from this is just above random, messing with the data the model is trained on could prove to be an interesting experiment.
