@@ -1,29 +1,39 @@
 # CoinComplete: A Principle Component Analysis machine learning tool used for Cryptocurrency investing.
 
-+ Related Work
-https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7515078/
-
-+ Technical Details
-I want to create a market analysis bot that predicts crypto currency trends.  It would use the Binance API to gather information for it to make important decisions.
-+ Future plans
-Start working on prediction bot.
-Learn more about machine learning.
-Learn more about possible algorithms to use.
-+ Why you should care
-Could be used to predict the market.
-Useful tool for market analyst. 
-
-
-Data is presented in a format that allows users to easliy look at market activity.  These graphs are useful at telling if investments would make money.  This tool is intended to be used by anyone wishing to research crypto activity.  It is compatable with all coins that are regisered on the Binance API.  This allows for easy minipulation of the data to specific needs.
-
-Outline:
-https://docs.google.com/document/d/18BZ2qadveVLXeHLCQd9eKBzU4CjPa4pPmedMjZzkGkY/edit?usp=sharing
-
-
 + Run Instructions:
 
+First install the required packages:
 ```
-python cluster.py
+pip install tensorflow
+pip install numpy
+pip install python-binance
+pip install binance
+pip install pandas
+pip install collections
+pip install plotly
+pip install scikit-learn
+pip install ta
+pip install warnings
+pip install plot_utils
+pip install time
+pip install random
+pip install keras
+pip install os
+```
+**RUNS BEST IN VISUAL STUDIO WITH ms-toolsai.jupyter**
+Run this program to load the data **NOTE: Date Variables are able to be changed**:
+```
+python data_processor.py
 ```
 
-**NOTE** this will NOT work unless you replace the key values in the keys.py with YOUR unique secret key and API key.
+Run with Jupyter Notebook **NOTE: Model able to be changed**:
+```
+sentiment.ipynb
+```
+
+To start trading with trained data run **NOTE: Target coin able to be changed**:
+```
+trading.ipynb
+```
+
+**NOTE** this will NOT work unless you replace the key values in the keys.py with YOUR unique secret key and API key generated here https://www.binance.us/settings/api-management?tab=exchange (mine loaded for educational use only).
