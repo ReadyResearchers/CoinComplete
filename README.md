@@ -1,4 +1,4 @@
-# CoinComplete: A Principle Component Analysis machine learning tool used for Cryptocurrency investing.
+# CoinComplete: A Principle Component Analysis Machine Learning Tool Used for Cryptocurrency investing.
 
 + Run Instructions:
 
