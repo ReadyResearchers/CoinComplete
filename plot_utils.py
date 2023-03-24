@@ -46,15 +46,17 @@ def shade_plot(data,x_col,y_col,mean_col,n_splits,range_color=[0.99,1.01],filter
                       color_continuous_scale='RdBu',
                       range_color=range_color,
                       color_continuous_midpoint=1,
+                      template="plotly_dark",
                       title='Means')
     
     fig1 = px.imshow(pd.DataFrame(median,index=xs).swapaxes("index", "columns"),
                       color_continuous_scale='RdBu',
                       range_color=range_color,
                       color_continuous_midpoint=1,
+                      template="plotly_dark",
                       title='Medians')
     
-    fig2 = px.imshow(pd.DataFrame(count,index=xs).swapaxes("index", "columns"),title='Count')
+    fig2 = px.imshow(pd.DataFrame(count,index=xs).swapaxes("index", "columns"),template="plotly_dark",title='Count')
     
     fig.show()
     fig1.show()
