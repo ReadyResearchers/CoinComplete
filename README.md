@@ -1,8 +1,8 @@
-# CoinComplete: A Principle Component Analysis Machine Learning Tool Used for Cryptocurrency investing.
+# CoinComplete: A Principle Component Analysis Machine Learning Tool Used for Cryptocurrency Investing.
 
 # Abstract
 
-My research determines if using machine learning to predict buy and sell orders through the Binance market is profitable.  Using a Principle component analysis (PCA) model to infer predictions on future market activity.  These predictions will be used to trade multiple currencies profitably.  For the purpose of this research, I will just be looking at Bitcoin (BTC) and Ethereum (ETH) as they are the most frequently traded coins. Using the Binance API, data is able to gathered from the present and the past.  Using this data in a Python script allows for manipulation of the data by applying it to the hyperparameters of the model.  The information that I am gathering will be able to predict when a person should buy and when a person should sell.  The research done here is done with careful consideration of previous other research done.  Previous research has taken a look at various other methods that have proven not successful.  Most other research had also taken place during a bull market when this research differentiates itself by being done during a bear market. This is research is intended to be used by crypto currency market analysts of any capacity.  It is something that is intended to help market traders more accurately know when to buy and sell.  This research was conducted to further the understanding of cryptocurrency market activity.  It attempts to answer questions about how to create profitable trading strategies in the crypto market.
+My research determines if using machine learning to predict buy and sell orders through the Binance market is profitable.  Using a Principle component analysis (PCA) model to infer predictions on future market activity.  These predictions will be used to trade multiple currencies profitably.  For this research, I will just be looking at Bitcoin (BTC) and Ethereum (ETH) as they are the most frequently traded coins. Using the Binance API, data can be gathered from the present and the past.  Using this data in a Python script allows for manipulation of the data by applying it to the hyperparameters of the model.  The information that I am gathering will be able to predict when a person should buy and when a person should sell.  The research done here is done with careful consideration of previous other research.  Previous research has taken a look at various other methods that have proven not successful.  Most other research had also taken place during a bull market when this research differentiates itself by being done during a bear market. This research is intended to be used by cryptocurrency market analysts of any capacity.  It is something that is intended to help market traders more accurately know when to buy and sell.  This research was conducted to further the understanding of cryptocurrency market activity.  It attempts to answer questions about how to create profitable trading strategies in the crypto market.
 
 # Run Instructions:
 
@@ -31,7 +31,7 @@ pip install keras
 pip install os
 ```
 
-Or Simply run:
+Or simply run:
 ```
 pip install -r requirements.txt
 ```
@@ -115,9 +115,9 @@ coins = ['BTC','ETH']
 - To select the desired coin for live trading, please change the two 'symbol' variables to the desired tokens name (example: BTC)
 - You are now live trading!
 **It is important to note that some coins have minimum trading amounts when conducting a trade through the API**
-- Please reference this to verify that your trade meets the minium requirements: https://www.binance.com/en/trade-rule
+- Please reference this to verify that your trade meets the minimum requirements: https://www.binance.com/en/trade-rule
 
 
 # Conclusions
 
-The results of this tool should not be taken as real financial recommendations. This is only meant to see if the previous market trends can indicate future market results. While the average result that we get from this is just above random, messing with the data the model is trained on could prove to be an interesting experiment.
+The results of this tool should not be taken as real financial recommendations. This is only meant to see if the previous market trends can indicate future market results. While the average result that we get from this is just above random, messing with the data the model is trained on could prove to be an interesting experiment. However it can be used to create better than random predictions. To see the experimentation results of this tool and further research please go [here]{https://github.com/ReadyResearchers/cmpsc-600-fall-2022-and-spring-2023-senior-thesis-connellyw.git}.
