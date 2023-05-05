@@ -116,6 +116,7 @@ coins = ['BTC','ETH']
 - You are now live trading!
 **It is important to note that some coins have minimum trading amounts when conducting a trade through the API**
 - Please reference this to verify that your trade meets the minimum requirements: https://www.binance.com/en/trade-rule
+- To conduct unlimited backtesting please change the responding code to 'client = Client(api_key, secret_key, testnet=True)'
 
 
 # Conclusions
