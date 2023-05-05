@@ -1,0 +1,15 @@
+tensorflow
+numpy
+python-binance
+binance
+pandas
+collections
+plotly
+scikit-learn
+ta
+warnings
+plot_utils
+time
+random
+keras
+os
